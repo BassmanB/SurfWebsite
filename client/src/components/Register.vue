@@ -21,13 +21,13 @@
 
               </div>
               <br>
-              <div class="error" v-html="error" >
+              <div class="error" v-html="error" />
               <br>
               <v-btn class="cyan"
                   @click="register">
                   Register
               </v-btn>
-              </div>
+
           </div>
       </v-flex>
   </v-layout>

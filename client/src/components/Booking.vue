@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <template>
+  
 <div>
 <div id="cssProperties">
   <div class="large square el" style="width: 200px; height: 200px; border: 2px solid black;"></div>
 </div>
-<!--	<div><button onclick="openNav()" >Fecha e abre</button></div>
 
-	<div class="booking-view" id="myDIV" >
-		<div id="close" onclick="closeNav()">x</div>
-		<h1 id="book-name">BOOK</h1>
-	-->
 
 		<form>
 		<label class="type">Type:
@@ -43,7 +39,7 @@
 			<textarea name="Notes" rows="10" cols="40" placeholder="Write Notes Here"></textarea>
 			<p id="nota">NOTA: A sua reserva só fica registada depois de receber um email de confirmação. <br>
 			NOTE: Your reservation will be registered after you receive a confirmation email.</p>
-			<input style="height: 60px;" id="submit" type="submit" name="">
+
 
 		</form>
     <v-btn class="cyan"
@@ -64,11 +60,12 @@ export default {
       name: 'def',
       surname: 'surferski',
       phoneNumber: '666',
-      error: null
+      error: 'CHUJ'
     }
   },
   methods: {
     async booking() {
+      console.log("KURWA MACCCCC")
       try {
         await BookingService.booking({
           name: this.name,

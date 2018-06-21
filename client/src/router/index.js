@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Register from '@/components/Register'
 import Booking from '@/components/Booking'
+import MainSite from '@/components/MainSite'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/booking',
       name:'booking',
       component: Booking
+    },
+    {
+      path: '/mainSite',
+      name: 'mainSite',
+      component: MainSite
     }
   ]
 })
